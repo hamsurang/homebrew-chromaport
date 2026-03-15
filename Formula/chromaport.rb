@@ -1,20 +1,20 @@
 class Chromaport < Formula
-  desc "Migrate VS Code / Cursor themes to Superset, Warp, and more"
+  desc "Migrate VS Code / Cursor / OpenCode themes to Superset, Warp, Ghostty, OpenCode, Obsidian, and more"
   homepage "https://github.com/hamsurang/chromaport"
-  version "0.7.0"
+  version "0.9.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hamsurang/chromaport/releases/download/v0.7.0/chromaport-aarch64-apple-darwin.tar.xz"
-      sha256 "678159f7d2f844b7ba7a900ed50fa3be1a5e3f79f2526034b790afe81e5712ba"
+      url "https://github.com/hamsurang/chromaport/releases/download/v0.9.1/chromaport-aarch64-apple-darwin.tar.xz"
+      sha256 "a57d23e666ef39a63b86a3b977d9e85f5a9df94bcd8692a7e7da3afd0f6268de"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hamsurang/chromaport/releases/download/v0.7.0/chromaport-x86_64-apple-darwin.tar.xz"
-      sha256 "b9ae1fdacc513929c22ee6fb2c728a6a3f4ba4aeb1cbec8c78c79cca1b2593c5"
+      url "https://github.com/hamsurang/chromaport/releases/download/v0.9.1/chromaport-x86_64-apple-darwin.tar.xz"
+      sha256 "6041a2b3bf91100b9c62e3b2db986260f021cd73d440aa3c5c12ea38c595baba"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/hamsurang/chromaport/releases/download/v0.7.0/chromaport-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "20f978c60be4de29e75f714db39a3169ba24510ccd3e1c48b4dea9dc183be767"
+      url "https://github.com/hamsurang/chromaport/releases/download/v0.9.1/chromaport-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "daa9cc1ede0a535cbd28b72527706347c138e253a53a7dc954a4a1f7cca32dcf"
   end
   license "MIT"
 
